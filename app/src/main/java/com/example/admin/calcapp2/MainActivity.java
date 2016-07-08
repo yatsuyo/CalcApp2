@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.text.InputType;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -50,14 +51,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v){
 
+        //data1 = null;
+
         if( mEditText1.getText().toString().length() > 0)
         {
             data1 = Double.parseDouble(mEditText1.getText().toString());
+            Log.d("ANDROIDTEST", mEditText1.getText().toString());
+        }else {
+            data1 = 0.0;
+            Log.d("ANDROIDTEST", mEditText1.getText().toString());
         }
         if( mEditText2.getText().toString().length() > 0)
         {
             data2 = Double.parseDouble(mEditText2.getText().toString());
+            Log.d("ANDROIDTEST", mEditText2.getText().toString());
+        }else{
+            data2 = 1.0;
+            Log.d("ANDROIDTEST", mEditText2.getText().toString());
         }
+
 
         if (v.getId() == R.id.button1) {
             type = 1;

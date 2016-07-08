@@ -16,7 +16,7 @@ public class SecondActivity extends AppCompatActivity {
         Intent intent = getIntent();
         double data1 = intent.getDoubleExtra("VALUE1", 0.0);
         //double data1 = intent.getIntExtra("VALUE1", 0.0);
-        double data2 = intent.getDoubleExtra("VALUE2", 0.0);
+        double data2 = intent.getDoubleExtra("VALUE2", 1.0);
         //double data2 = intent.getIntExtra("VALUE2", 1.0);
         int type = intent.getIntExtra("TYPE", 1);
 
