@@ -50,11 +50,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v){
 
-        if( mEditText1.getText().toString().length() > 0);
+        if( mEditText1.getText().toString().length() > 0)
         {
             data1 = Double.parseDouble(mEditText1.getText().toString());
         }
-        if( mEditText2.getText().toString().length() > 0);
+        if( mEditText2.getText().toString().length() > 0)
         {
             data2 = Double.parseDouble(mEditText2.getText().toString());
         }
